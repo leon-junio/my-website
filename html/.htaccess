@@ -1,0 +1,13 @@
+ErrorDocument 400 http://leonsolucoes.epizy.com/400.html
+ErrorDocument 401 http://leonsolucoes.epizy.com/401.html
+ErrorDocument 403 http://leonsolucoes.epizy.com/403.html
+ErrorDocument 404 http://leonsolucoes.epizy.com/404.html
+ErrorDocument 503 http://leonsolucoes.epizy.com/503.html
+ErrorDocument 500 http://leonsolucoes.epizy.com/erro.html
+
+#####THE FOLLOWING IS REQUIRED FOR PROTECTED FOLDERS
+AuthUserFile /home/vol16_2/epizy.com/epiz_29415746/htdocs/html//.htpasswd.272c88cf340527a656fd15b12b7488ad
+AuthName password_required
+AuthType Basic
+Require valid-user
+########END REQUIRE
