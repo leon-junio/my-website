@@ -10,15 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/control.css">
+    <link rel="stylesheet" href="css/whats.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/onepage-scroll/onepage-scroll.css">
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/control.css">
-    <link rel="stylesheet" href="css/whats.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -60,7 +60,7 @@
                                 na area da computação, com isso tenho certeza que o meu conhecimento pode ser a resposta.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img loading="lazy" src="img/sobre.png" style="position: absolute;z-index: 1;right: 2%;" alt="..." style="z-index: 0;" class="img-fluid rounded-circle d-block mx-auto">
+                            <img src="img/sobre.png" style="position: absolute;z-index: 1;right: 2%;" alt="..." style="z-index: 0;" class="img-fluid rounded-circle d-block mx-auto">
                             <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_p1qiuawe.json" background="transparent" speed="1" style="width: 100%; height: 103%;" loop autoplay></lottie-player>
                         </div>
                     </div>
@@ -115,13 +115,13 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="bg-white">
             <div class="d-flex h-100 align-items-center">
                 <div class="container">
-                    <header class="text-center mb-5">
+                    <div class="text-center">
                         <h2 class="text-uppercase lined">Portfólio</h2>
                         <p class="text-mted">Clique e saiba mais.</p>
-                    </header>
+                    </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 mb-4">
                             <a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="Site para provedora IBR 2020 <hr> <a class='btn btn-outline-light' href='http://ibrcap.com.br' >Acessar</a>" class="d-block mb-1"><img loading="lazy" src="img/portfolio-1.jpg" style="height: 210px;" alt="..." class="img-fluid d-block mx-auto">
@@ -157,28 +157,42 @@
                 </div>
             </div>
         </section>
-        <section class="row">
+        <section class="bg-light">
+        <div class="container">
+        <div class="row">
             <div id="div-down" class="col-12 align-items-center text-center">
-                <h1>DOWNLOADS</h1>
-                <hr>
-                <a id="btn-down" class='btn btn-outline-dark' href='https://downloadsleonsolucoes.leonjunio.repl.co/downloads/sms-app.rar' onclick="alert('Para instalar lembre-se de pedir a senha para a administração, o seu download foi iniciado, leia as instruções e feche o programa desatualizado se for o caso. O sistema antigo do almoxarifado (todas as versoes antes da 1.3) não funcionam mais, desinstale o sistema antigo manualmente após instalar o sistema novo do saude+. Ao baixar esse sistema você concorda com os termos de uso do mesmo e aceita o compartilhamento de suas informações para a melhoria e segurança do sistema. O uso indevido do mesmo pode resultar em multa de acordo com as leis de licença de proteção de software e de acordo com o a licença disponivel no arquivo license.txt do instalador. Bom uso e até mais, Leon Junio Martins Ferreira - Ti/Cientista da Computação 2021');">Download do SAUDE+</a>                <a>Versão 1.3.7 --- 29/12/2021 </a>
-                <p>Lembre-se de ler as instruções e as informações a seguir - Necessita da SENHA do gestor para instalar</p>
-            </div>
-            <div class="col-sm-6 col-6 col-md-6 col-xs-12 align-items-center text-center">
-                <h5>INFORMAÇÕES DA VERSÃO 1.3.7</h5>
+                <h2 class="text-uppercase lined">DOWNLOADS</h2>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 align-items-center text-center">
+                <h5>Baixar o sistema</h5>
+                <a id="btn-down" class='btn btn-outline-dark' href='https://downloadsleonsolucoes.leonjunio.repl.co/downloads/sms-app.rar' onclick="alert('Para instalar lembre-se de pedir a senha para a administração, o seu download foi iniciado, leia as instruções e feche o programa desatualizado se for o caso. O sistema antigo do almoxarifado (todas as versoes antes da 1.3) não funcionam mais, desinstale o sistema antigo manualmente após instalar o sistema novo do saude+. Ao baixar esse sistema você concorda com os termos de uso do mesmo e aceita o compartilhamento de suas informações para a melhoria e segurança do sistema. O uso indevido do mesmo pode resultar em multa de acordo com as leis de licença de proteção de software e de acordo com o a licença disponivel no arquivo license.txt do instalador. Bom uso e até mais, Leon Junio Martins Ferreira - Ti/Cientista da Computação 2022');">Download do SAUDE+ 2022</a>                <br><a>Versão 1.3.10 --- 06/01/2022 </a>
+                <p>Lembre-se de ler as instruções e as informações a seguir</p>
+<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kabycqad.json"  background="transparent"  speed="1"  style="width: 100%; height: 200px;"  loop  autoplay></lottie-player>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 align-items-center text-center">
+           <h5>Como atualizar/instalar ?</h5>
+            <iframe width="70%" height="215" loading="lazy" src="https://www.youtube.com/embed/t_0Vvqa7B1U?autoplay=1" title="Video Instalação" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <p>Tutorial de instalação/atualização do Saude+ 2022</p>
+             <p>Um tutorial básico sobre como instalar o sistema</p>
+              <p>Assista duas vezes, para ver informátivos e para a prática </p>
+             </div>
+            <div class="col-sm-12 col-lg-6 col-md-6 col-xs-12 align-items-center text-center">
+                <h5>INFORMAÇÕES DA VERSÃO 1.3.10</h5>
                 <ul>
                     <li>O sistema do almoxarifado foi transformado em um modulo inserido no novo software;</li>
                     <li style="color:red;">Desinstale o sistema antigo pois ele não é mais funcional, realize essa tarefa manualmente;</li>
                     <li>Os usuarios e senhas para acessar o sistema não foram alterados.</li>
                     <li>Beta do sistema de viagens/frotas</li>
-                    <li>Sistema de notificações personalizadas para windows 10</li>
-                    <li>Novas interfaces internas para o sistema</li>
-                    <li>Correção integral de novos erros</li>
-                    <li>Design do modulo de viagens e frotas</li>
-                    <li>Sistema de controle de demanda e negação de serviço</li>
-                    <li>Novo sistema de controle de dados de login/acesso</li>
-                    <li>Solução de feedbacks e aprimoramento recomendado</li>
-                    <li>Alpha 1.0 do sistema de viagens</li>
+                    <li>Correção de erros na interface</li>
+                    <li>Icone na barra de notificações apresenta menus interativos</li>
+                    <li>Manutenção automática de erros</li>
+                    <li>Novos facilitadores de uso para o sistema</li>
+                    <li>Correção de erros e bugs reportados</li>
+                    <li>Crescimento do Design do modulo de viagens e frotas</li>
+                    <li>Botão de voltar aos modulos</li>
+                    <li>Melhoria na performance do login/solicitação</li>
+                    <li>Aprimoramento recomendado</li>
+                    <li>Alpha 1.2 do sistema de viagens</li>
                     <li style="color:red;">REQUISITOS MINIMOS:</li>
                     <ul>
                         <li>Java 32 ou 64 bits <a class='btn btn-outline-dark' href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245448_4d5417147a92418ea8b615e228bb6935" target="_blank">Download do java</a></li>
@@ -191,7 +205,7 @@
                     </ul>
                 </ul>
             </div>
-            <div class="col-sm-6 col-6 col-md-6 col-xs-12 align-items-center text-center">
+            <div class="col-sm-12 col-lg-6 col-md-6 col-xs-12 align-items-center text-center">
                 <h5>INSTRUÇÕES DE DOWNLOAD E INSTALAÇÃO:</h5>
                 <ul>
                     <li style="color:blue">NECESSITA DA SENHA DE INSTALAÇÃO FORNECIDA PELO COORDENADOR</li>
@@ -217,18 +231,20 @@
                         <li>Após fechar o instalador e abrir o sistema, um icone será criado automaticamente na área de trabalho;</li>
                 </ul>
             </div>
-        </section>
-        <section class="row">
-            <div class="col-12 align-itens-center text-center">
-                <h1>BLOG</h1>
-                <iframe loading="lazy" autoplay="false" class="site1" width="100%" height="100%" frameborder="0" src="https://leongitapi.leonjunio.repl.co/"></iframe>
+                        </div>
             </div>
         </section>
-        <section class="row">
+        <section class="bg-white">
+            <div class="col-12 align-itens-center text-center">
+                <h2 class="text-uppercase lined">BLOG</h2>
+                <iframe style="height:400px" loading="lazy" autoplay="false" class="site1" width="100%" height="100%" frameborder="0" src="https://leongitapi.leonjunio.repl.co/"></iframe>
+            </div>
+        </section>
+        <section class="bg-gray">
             <div class="col-12 align-items-center text-center">
+            <h2 class="text-uppercase lined">Contato</h2>
                 <div class="col-12 redes-sociais">
-                    <article class="redes">
-                        <h3>Redes Sociais</h3>
+                    <article class="redes"> 
                         <a href="http://instagram.com/leonjrmartins" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                         <a href="http://facebook.com/leonjrmartins" target="_blank"><i class="fab fa-facebook-square fa-2x fa-sm"></i></a>
                         <a href="http://twitter.com/leonjrmartins" target="_blank"><i class="fab fa-twitter fa-2x fa-sm"></i></a>
@@ -236,7 +252,31 @@
                         <a href="https://github.com/leon-junio" target="_blank"><i class="fab fa-github fa-2x fa-sm"></i></a>
                         <a href="https://www.youtube.com/channel/UCjLj-ZZKSv5Fd05AzSVajiw" target="_blank"><i class="fab fa-youtube fa-2x fa-sm"></i></a>
                     </article>
-                </div>
+                    <hr>
+                 <form action="sender.php?msg=''" class=" contact-form align-items-center text-center">
+                                <div class=" row ">
+                                    <div class=" form-group col-lg-4 ">
+                                        <label for="nome">Seu primeiro nome *</label>
+                                        <input id="nome" type=" text " required name=" firstname " placeholder=" Digite seu primeiro nome " class=" form-control ">
+                                    </div>
+                                    <div class=" form-group col-lg-4 ">
+                                        <label for="sobrenome">Seu sobrenome *</label>
+                                        <input id="sobrenome" type=" text " required name=" lastname " placeholder=" Digite seu sobrenome " class=" form-control ">
+                                    </div>
+                                    <div class=" form-group col-lg-4 ">
+                                        <label for="email">Seu email *</label>
+                                        <input id="email" type=" email " required name=" email " placeholder=" Digite seu email " class=" form-control ">
+                                    </div>
+                                    <div class=" form-group col-lg-12 ">
+                                        <label for="message">Sua mensagem que deseja enviar *</label>
+                                        <textarea id="message" name=" message " required rows="4" placeholder=" Digite sua mensagem " class=" form-control "></textarea>
+                                    </div>
+                                    <div class=" form-group col-lg-12 ">
+                                        <button type=" submit " class=" btn btn-outline-primary">Enviar mensagem</button>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
                 <footer>
                     <div class="bg-darker py-4">
                         <div class="container text-center">
