@@ -144,14 +144,14 @@
             <div class="container">
                 <div class="row">
                     <div id="div-down" class="col-12 align-items-center text-center">
-                        <h2 class="text-uppercase lined">SAÚDE+ -  Gerenciamento de serviços de sáude</h2>
+                        <h2 class="text-uppercase lined">SAÚDE+ - Gerenciamento de serviços de sáude</h2>
                     </div>
                     <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 align-items-center text-center">
                         <h5>Baixar o sistema</h5>
                         <a type="button" href="#" id="btn-down" class="btn btn-outline-dark" data-toggle="modal" data-target="#downModal">
                             Download do SAUDE+ 2023</a>
                         <p>Versão 2.3.12 --- 18/08/2023 </p>
-                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kabycqad.json" background="transparent" speed="1" style="width: 100%; height: 200px;" loop autoplay></lottie-player>
+                        <lottie-player data-toggle="modal" data-target="#downModal" src="https://assets8.lottiefiles.com/packages/lf20_kabycqad.json" background="transparent" speed="1" style="width: 100%; height: 200px;" loop autoplay></lottie-player>
                     </div>
                     <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 align-items-center text-center">
                         <h5>Como atualizar/instalar ?</h5>
@@ -160,19 +160,24 @@
                     </div>
                     <div class="col-sm-12 col-lg-6 col-md-6 col-xs-12 align-items-center text-center">
                         <h5>INFORMAÇÕES DA VERSÃO 2.3.12</h5>
-                        <p>Todas as alterações desta versão estão documentadas e são abertas para visualização. As alterações contém detalhes técnicos, em caso de dúvidas contate o suporte!</p>
+                        <p>Todas as alterações desta versão estão documentadas e são abertas para visualização. As alterações contém detalhes técnicos e em caso de dúvidas contate o suporte!</p>
                         <a class="btn btn-outline-dark" href="patch-notes.html">Ver notas da versão (O que há de novo?)</a>
+                        <hr>
+                        <h5>Saúde+ WEB</h5>
+                        <p>Os sistemas WEB do saúde+ ajudam a espalhar ainda mais os serviços de gerenciamento de saúde.</p>
+                        <a class="btn btn-outline-dark" href="https://saudeplus.epizy.com">Saúde+ WEB</a>
                     </div>
                     <div class="col-sm-12 col-lg-6 col-md-6 col-xs-12 align-items-center text-center">
                         <h5>REQUISITOS DO SISTEMA</h5>
-                        <li>Java 64 bits <a class='btn btn-outline-dark' href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245448_4d5417147a92418ea8b615e228bb6935" target="_blank">Download do java</a></li>
-                        <li>Resolução recomendada: acima de 1024x720 e taxa de zoom até 120%</li>
-                        <li>Processador Dual Core acima de 2.0 GHz (Intel® ou AMD®)</li>
-                        <li>4 GB de RAM</li>
-                        <li>100 MB de espaço no HD (Partição "C:")</li>
-                        <li>Conexão com a internet de no minimo 10 Mbps</li>
-                        <li>Sistema operacional: Windows 10/11 (64 bits) (Dispositivos Linux não são suportados)</li>
-                        </ul>
+                        <ul>
+                            <li>Java 64 bits instalado (Java 8+) <a class='btn btn-outline-dark' href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245448_4d5417147a92418ea8b615e228bb6935" target="_blank">Download do java</a></li>
+                            <li>Resolução recomendada: acima de 1024x720 e taxa de zoom até 120%</li>
+                            <li>Processador Dual Core acima de 2.0 GHz (Intel® ou AMD®)</li>
+                            <li>4 GB de RAM</li>
+                            <li>100 MB de espaço no HD (Partição "C:")</li>
+                            <li>Conexão com a internet de no minimo 10 Mbps</li>
+                            <li>Sistema operacional: Windows 10/11 (64 bits) (Dispositivos Linux não são suportados)</li>
+                            <li>O uso do sistema é condicionado a ter uma conta de funcionário registrada e com acesso liberado. Em caso de dúvida entre em contato com o administrador do seu município.</li>
                         </ul>
                     </div>
                 </div>
@@ -235,8 +240,8 @@
         <script src=" vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
         <script src=" vendor/onepage-scroll/jquery.onepage-scroll.min.js "></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <script src=" js/front.js?id=<?php echo time()?>"></script>
-        <script src=" js/main.js?id=<?php echo time()?>"></script>
+        <script src=" js/front.js?id=<?php echo time() ?>"></script>
+        <script src=" js/main.js?id=<?php echo time() ?>"></script>
         <script>
             window.onload = device();
             check();
@@ -246,4 +251,5 @@
     </div>
     <?php require_once('structures/downModal.php'); ?>
 </body>
+
 </html>
