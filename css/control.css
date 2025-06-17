@@ -11,4 +11,30 @@
     #anim-port{
         display: none;
     }
+}@media (max-width: 1000px) {
+    #btn-contato{
+        display: none;
+    }
+    #anim-contato{
+        display: none;
+    }
+    #btn-port{
+        display: none;
+    }
+    #anim-port{
+        display: none;
+    }
+}@media (max-width: 1000px) {
+    #btn-contato{
+        display: none;
+    }
+    #anim-contato{
+        display: none;
+    }
+    #btn-port{
+        display: none;
+    }
+    #anim-port{
+        display: none;
+    }
 }

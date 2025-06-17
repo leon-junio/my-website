@@ -11,7 +11,7 @@ $(function() {
         loop: true, 
         keyboard: true,
         responsiveFallback: 900, 
-        direction: "horizontal" 
+        direction: "vertical" 
     });
 });
 

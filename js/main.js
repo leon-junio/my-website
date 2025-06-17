@@ -1,4 +1,4 @@
-var mirror = "https://downloadsleonsolucoes.leonjunio.repl.co/downloads/sms-app.rar";
+const mirror = "https://saudeplus.leonjr.dev:8025/saude+/downloads/sms-app.rar";
 
 function download() {
     window.open(mirror, "_self");
