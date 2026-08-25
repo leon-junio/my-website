@@ -1,64 +1,118 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Saúde + Patch Notes</title>
+    <title>Saúde+ — Notas de Versão | Leon Junio Martins Ferreira</title>
+    <meta name="description"
+        content="Notas de versão do software Saúde+ — sistema integrado de gestão em saúde municipal. Veja novidades, correções e melhorias de cada versão.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem('dark-mode');
+                var dark = stored !== null ? stored === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
 </head>
 
-<body class="bg-dark text-light" style="text-align: center;">
-    <h1 class="text-uppercase my-4"> Saúde+ Notas de Versão</h1>
-    <h2>Versão 4.0.17</h2>
-    <h3>22/01/2026</h3>
-    <div class="container">
-        <div class="row">
-            <div class="card bg-dark text-light  align-items-center text-left">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Novidades e atualizações</h5>
-                    <ul class="list-group list-group-flush bg-dark text-light">
-                        <h3 style="color:#33fff6">Versão 4.0.17 - Updates e correções</h3>
-                        <li class="list-item">Atualização de bibliotecas internas e preparação para migração</li>
-                        <li class="list-item">Redução do total de caracteres em observações das solicitações</li>
-                        <li class="list-item">Correção da fase inicial de verificações obrigatórias do sistema</li>
-                        <li class="list-item">Ajuste no RUSKS e correção no problema de travar o inicio do sistema</li>
-                        <li class="list-item">Nova opção de apagar viagens erradas após seu encerramento</li>
-                        <li class="list-item">Ajuste de texto de alerta no sistema de viagens que não desaparecia</li>
-                        <li class="list-item">Correção de popup para administradores do almoxarifados</li>
-                        <li class="list-item">Ajuste no cliente do APICep</li>
-                        <li class="list-item">Ajuste na tematização e suporte para 2026</li>
-                        <li class="list-item">Correção de problemas ao abrir arquivos e gerar documentos</li>
-                        <li class="list-item">Correções e melhorias de segurança</li>
-                        <li class="list-item">Adição de criptografia e assinatura digital do sistema</li>
-                        <li class="list-item">Correções de interface em diversos pontos</li>
-                        <li class="list-item">Melhorias de performance e atualizações de bibliotecas internas</li>
-                        <li class="list-item">Correções dos feedbacks de Dezembro/2026</li>
-                    </ul>
+<body>
+    <div class="main">
+        <section class="py-5 text-center">
+            <div class="container">
+                <p class="mb-3">
+                    <a href="index.html#saudeplus" class="btn btn-outline-dark btn-sm">
+                        <i class="fas fa-arrow-left"></i> Voltar ao início
+                    </a>
+                </p>
+                <h1 class="text-uppercase lined">Saúde+ — Notas de Versão</h1>
+                <p class="lead">Histórico de atualizações e melhorias do sistema</p>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start mb-3 flex-wrap">
+                                    <div>
+                                        <h2 class="h4 mb-1">Versão 4.0.17</h2>
+                                        <p class="text-muted mb-0">22/01/2026</p>
+                                    </div>
+                                    <span class="badge bg-primary">Atual</span>
+                                </div>
+                                <hr>
+                                <h3 class="h5 text-primary">Novidades e atualizações</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent">Atualização de bibliotecas internas e preparação para migração</li>
+                                    <li class="list-group-item bg-transparent">Redução do total de caracteres em observações das solicitações</li>
+                                    <li class="list-group-item bg-transparent">Correção da fase inicial de verificações obrigatórias do sistema</li>
+                                    <li class="list-group-item bg-transparent">Ajuste no RUSKS e correção no problema de travar o início do sistema</li>
+                                    <li class="list-group-item bg-transparent">Nova opção de apagar viagens erradas após seu encerramento</li>
+                                    <li class="list-group-item bg-transparent">Ajuste de texto de alerta no sistema de viagens que não desaparecia</li>
+                                    <li class="list-group-item bg-transparent">Correção de popup para administradores dos almoxarifados</li>
+                                    <li class="list-group-item bg-transparent">Ajuste no cliente do APICep</li>
+                                    <li class="list-group-item bg-transparent">Ajuste na tematização e suporte para 2026</li>
+                                    <li class="list-group-item bg-transparent">Correção de problemas ao abrir arquivos e gerar documentos</li>
+                                    <li class="list-group-item bg-transparent">Correções e melhorias de segurança</li>
+                                    <li class="list-group-item bg-transparent">Adição de criptografia e assinatura digital do sistema</li>
+                                    <li class="list-group-item bg-transparent">Correções de interface em diversos pontos</li>
+                                    <li class="list-group-item bg-transparent">Melhorias de performance e atualizações de bibliotecas internas</li>
+                                    <li class="list-group-item bg-transparent">Correções dos feedbacks de Dezembro/2026</li>
+                                </ul>
+                                <hr>
+                                <div class="d-flex gap-2">
+                                    <a href="index.html#saudeplus" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> Baixar Saúde+
+                                    </a>
+                                    <a href="license.html" target="_blank" class="btn btn-outline-dark">
+                                        Termos de uso
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <footer>
+            <div class="bg-darker py-4">
+                <div class="container text-center">
+                    <p class="mb-0 text-muted text-small">&copy; Todos os direitos reservados. Desenvolvido por
+                        <a href="https://www.instagram.com/leonjrmartins/?hl=pt-br">Leon</a> 2026.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer>
-        <div class="bg-darker py-4">
-            <div class="container text-center">
-                <p class="mb-0 text-small">&copy; Todos os direitos reservados. Desenvolvido por <a class="text-primary"
-                        href="https://www.instagram.com/leonjrmartins/?hl=pt-br">Leon</a> 2026.</p>
-            </div>
-        </div>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

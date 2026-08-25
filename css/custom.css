@@ -1,14 +1,221 @@
-@media (max-width: 1000px) {
-    #btn-contato{
-        display: none;
-    }
-    #anim-contato{
-        display: none;
-    }
-    #btn-port{
-        display: none;
-    }
-    #anim-port{
-        display: none;
-    }
+/* Project cards */
+.project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.project-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Stats section */
+.stats-section {
+    padding: 2.5rem 0;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #4fbfa8;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Cert cards */
+.cert-card {
+    border-radius: 8px;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #4fbfa8;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive: keep nav buttons visible on mobile */
+@media (max-width: 1000px) {
+    #btn-contato,
+    #btn-port {
+        display: inline-block !important;
+    }
+}
+
+/* ==========================================
+   THEME SYSTEM — Light mode (default)
+   ========================================== */
+:root {
+    --bg-primary: #fff;
+    --bg-secondary: #f8f9fa;
+    --bg-gray: #eee;
+    --bg-darker: #343a40;
+    --text-primary: #212529;
+    --text-muted: #6c757d;
+    --card-bg: #fff;
+    --card-border: rgba(0, 0, 0, 0.075);
+    --hero-overlay: rgba(0, 0, 0, 0.3);
+    --link-color: #4fbfa8;
+    --link-hover: #3aa18c;
+    --footer-text: #fff;
+
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-heading-color: #212529;
+    --bs-list-group-color: #212529;
+    --bs-list-group-bg: transparent;
+    --bs-secondary-color: #6c757d;
+    --bs-border-color: rgba(0, 0, 0, 0.175);
+}
+
+/* ==========================================
+   THEME — Dark mode (controlled by JS via data-theme)
+   JS sets data-theme="dark" based on OS preference
+   on first load, and toggles it on click.
+   ========================================== */
+:root[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1a1a2e;
+    --bg-gray: #1e1e30;
+    --bg-darker: #0a0a0a;
+    --text-primary: #e6e1e5;
+    --text-muted: #9e9eb6;
+    --card-bg: #1e1e30;
+    --card-border: #2a2a48;
+    --hero-overlay: rgba(0, 0, 0, 0.6);
+    --link-color: #7ec8e3;
+    --link-hover: #a8d8f0;
+    --footer-text: #9e9eb6;
+
+    --bs-body-color: #e6e1e5;
+    --bs-body-bg: #121212;
+    --bs-heading-color: #e6e1e5;
+    --bs-list-group-color: #e6e1e5;
+    --bs-list-group-bg: transparent;
+    --bs-secondary-color: #9e9eb6;
+    --bs-border-color: #2a2a48;
+}
+
+/* ==========================================
+   THEME APPLICATION — Dynamic variable usage
+   ========================================== */
+body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+.bg-white {
+    background-color: var(--bg-primary) !important;
+}
+
+.bg-light {
+    background-color: var(--bg-secondary) !important;
+}
+
+.bg-gray {
+    background-color: var(--bg-gray) !important;
+}
+
+.bg-darker {
+    background-color: var(--bg-darker) !important;
+}
+
+.text-muted,
+.text-gray {
+    color: var(--text-muted) !important;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+.text-small a {
+    color: var(--footer-text);
+}
+
+.text-small a:hover {
+    color: #fff;
+}
+
+.card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--card-border) !important;
+}
+
+.card-title,
+.card-text {
+    color: var(--text-primary) !important;
+}
+
+.card-title.text-primary {
+    color: #4fbfa8 !important;
+}
+
+.list-group-item {
+    color: var(--text-primary) !important;
+    background-color: transparent !important;
+    border-color: var(--card-border) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.hero .dark-overlay {
+    background: var(--hero-overlay);
+}
+
+.cert-card {
+    background-color: var(--card-bg) !important;
+}
+
+.btn-outline-dark {
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
 }
