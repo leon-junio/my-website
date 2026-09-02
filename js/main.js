@@ -1,5 +1,30 @@
+export const latestVersion = "4.1.2";
+export const latestReleaseDate = "02/09/2026";
+
+export const releaseInfo = {
+    version: latestVersion,
+    date: latestReleaseDate,
+};
+
+function updateVersionLabels() {
+    const labels = document.querySelectorAll('[data-version-label]');
+    labels.forEach((element) => {
+        element.textContent = `V ${latestVersion}`;
+    });
+
+    const releaseTitles = document.querySelectorAll('[data-release-version]');
+    releaseTitles.forEach((element) => {
+        element.textContent = `Versão ${latestVersion}`;
+    });
+
+    const releaseDates = document.querySelectorAll('[data-release-date]');
+    releaseDates.forEach((element) => {
+        element.textContent = latestReleaseDate;
+    });
+}
+
 (function () {
-    const mirror = "https://saudeplus.leonjr.dev:8025/saude+/downloads/sms-app.rar";
+    const mirror = "https://web-saudeplus.leonjr.dev/saude+/downloads/" + latestVersion + "/sms-app.rar";
 
     function download() {
         window.open(mirror, "_self");
@@ -35,6 +60,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+        updateVersionLabels();
         initDarkMode();
         const downloadBt = document.getElementById('download-bt');
         if (downloadBt) {
