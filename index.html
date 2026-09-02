@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Leon Junio Martins Ferreira — Desenvolvedor Full Stack & Portfólio</title>
+    <title>Leon Junio Martins Ferreira</title>
     <meta name="description"
         content="Portfólio de Leon Junio Martins Ferreira. Engenheiro de software full stack na NG.CASH. Bacharel em Ciência da Computação pela PUC Minas. Especialista em Java, Node.js, Spring Boot, React e arquitetura de software.">
     <meta name="keywords"
@@ -76,7 +76,7 @@
 
 <body>
     <div class="main">
-        <section class="bg-cover bg-center hero">
+        <section id="hero" class="bg-cover bg-center hero">
             <div class="dark-overlay"></div>
             <div class="position-relative z-index-1">
                 <div class="container text-center text-white">
@@ -86,19 +86,19 @@
                         sobre meu trabalho!</p>
                     <ul class="onepage-scroll">
                         <li class="list-inline-item">
-                            <a id="btn-contato" class="btn btn-outline-light text-light" href="#5">Contato</a>
+                            <a id="btn-contato" class="btn btn-outline-light text-light" href="#contact">Contato</a>
                         </li>
                         <li class="list-inline-item">
-                            <a id="btn-port" class="btn btn-outline-light text-light" href="#3">Portfólio</a>
+                            <a id="btn-port" class="btn btn-outline-light text-light" href="#portfolio">Portfólio</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <a href="#1">
+            <a href="#bio" class="scroll-down">
                 <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
             </a>
         </section>
-        <section id="1">
+        <section id="bio">
             <div class="d-flex h-100 align-items-center">
                 <div class="container">
                     <div class="row align-items-center">
@@ -142,7 +142,7 @@
             </div>
         </section>
         <!-- Stats -->
-        <section class="bg-white stats-section">
+        <section id="stats" class="bg-white stats-section">
             <div class="container py-4">
                 <div class="row text-center">
                     <div class="col-6 col-lg-3 mb-3 mb-lg-0 stat-item">
@@ -164,7 +164,7 @@
                 </div>
             </div>
         </section>
-        <section id="2" class="bg-gray">
+        <section id="skills" class="bg-gray">
             <div class="d-flex h-100 align-items-center">
                 <div class="container">
                     <header class="mb-5 text-center">
@@ -224,7 +224,7 @@
                 </div>
             </div>
         </section>
-        <section id="3" class="bg-light">
+        <section id="portfolio" class="bg-light">
             <div class="d-flex h-100 align-items-center">
                 <div class="container">
                     <div class="text-center">
@@ -344,7 +344,7 @@
                                         <span class="badge bg-secondary">MySQL</span>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <a href="https://saudeplus.leonjr.dev:8025/servicos" target="_blank"
+                                        <a href="https://web-saudeplus.leonjr.dev/servicos" target="_blank"
                                             class="btn btn-outline-dark btn-sm"><i class="fas fa-external-link-alt"></i>
                                             Website</a>
                                     </div>
@@ -360,7 +360,7 @@
             </div>
         </section>
         <!-- Certifications -->
-        <section class="bg-white">
+        <section id="certifications" class="bg-white">
             <div class="d-flex h-100 align-items-center">
                 <div class="container">
                     <header class="mb-5 text-center">
@@ -419,7 +419,7 @@
                 </div>
             </div>
         </section>
-        <section id="4" class="bg-light">
+        <section id="highlights" class="bg-light">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="text-uppercase lined">Destaques</h2>
@@ -476,9 +476,10 @@
                             atendimentos, viagens, almoxarifado e exames em um só lugar.</p>
                         <div class="d-flex gap-2 justify-content-center justify-content-lg-start flex-wrap">
                             <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#downModal"
-                                class="btn btn-primary"><i class="fas fa-download"></i> Baixar v4.0.17</a>
+                                class="btn btn-primary"><i class="fas fa-download"></i> Baixar <span data-version-label>V 0.0.0</span></a>
                             <a href="patch-notes.html" class="btn btn-outline-primary">Notas da versão</a>
-                            <a href="https://saudeplus.leonjr.dev:8025/servicos" class="btn btn-outline-dark">Versão Web</a>
+                            <a href="https://web-saudeplus.leonjr.dev/servicos" class="btn btn-outline-dark">Versão
+                                Web</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -517,7 +518,7 @@
                 </div>
             </div>
         </section>
-        <section id="5" class="bg-gray">
+        <section id="contact" class="bg-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-12 align-items-center text-center">
@@ -587,7 +588,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 
 </body>
 
