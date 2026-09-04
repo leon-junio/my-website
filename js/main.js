@@ -1,5 +1,5 @@
-export const latestVersion = "4.1.3";
-export const latestReleaseDate = "02/09/2026";
+export const latestVersion = "4.1.4";
+export const latestReleaseDate = "04/09/2026";
 
 export const releaseInfo = {
     version: latestVersion,
