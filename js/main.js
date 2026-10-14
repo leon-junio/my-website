@@ -1,6 +1,6 @@
 export const latestVersion = "4.1.4";
 export const latestReleaseDate = "04/09/2026";
-export const betaVersion = "5.0.3";
+export const betaVersion = "5.0.4";
 export const betaReleaseDate = "14/10/2026";
 
 export const releaseInfo = {
