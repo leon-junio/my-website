@@ -1,5 +1,7 @@
-export const latestVersion = "5.0.1";
-export const latestReleaseDate = "09/10/2026";
+export const latestVersion = "4.1.4";
+export const latestReleaseDate = "04/09/2026";
+export const betaVersion = "5.0.3";
+export const betaReleaseDate = "14/10/2026";
 
 export const releaseInfo = {
     version: latestVersion,
@@ -21,13 +23,23 @@ function updateVersionLabels() {
     releaseDates.forEach((element) => {
         element.textContent = latestReleaseDate;
     });
+
+    const betaLabels = document.querySelectorAll('[data-beta-version-label]');
+    betaLabels.forEach((element) => {
+        element.textContent = `V ${betaVersion}`;
+    });
+
+    const betaDates = document.querySelectorAll('[data-beta-release-date]');
+    betaDates.forEach((element) => {
+        element.textContent = betaReleaseDate;
+    });
 }
 
 (function () {
-    const mirror = "https://web-saudeplus.leonjr.dev/saude+/downloads/" + latestVersion + "/sms-app.rar";
+    let selectedVersion = latestVersion;
 
     function download() {
-        window.open(mirror, "_self");
+        window.open("https://web-saudeplus.leonjr.dev/saude+/downloads/" + selectedVersion + "/sms-app.rar", "_self");
     }
 
     function initDarkMode() {
@@ -62,6 +74,13 @@ function updateVersionLabels() {
     document.addEventListener('DOMContentLoaded', function () {
         updateVersionLabels();
         initDarkMode();
+        const downModal = document.getElementById('downModal');
+        if (downModal) {
+            downModal.addEventListener('show.bs.modal', function (event) {
+                const trigger = event.relatedTarget;
+                selectedVersion = trigger && trigger.dataset.downloadChannel === 'beta' ? betaVersion : latestVersion;
+            });
+        }
         const downloadBt = document.getElementById('download-bt');
         if (downloadBt) {
             downloadBt.addEventListener('click', function () {

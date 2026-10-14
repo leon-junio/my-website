@@ -52,14 +52,65 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
+                        <div class="card shadow-sm mb-4 border-warning">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start mb-3 flex-wrap">
+                                    <div>
+                                        <h2 class="h4 mb-1">Versão 5.0.3 (Beta)</h2>
+                                        <p class="text-muted mb-0" data-beta-release-date>00/00/0000</p>
+                                    </div>
+                                    <span class="badge bg-warning text-dark">Beta</span>
+                                </div>
+                                <p class="mb-0">Versão em fase de testes. A versão oficial continua sendo a 4.1.4. Inclui as mudanças das versões 5.0.1 e 5.0.2.</p>
+                                <hr>
+                                <h3 class="h5 text-primary">Correções e bugs</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent">Autorizar, excluir e abrir os detalhes de exames na Regulação voltou a funcionar</li>
+                                    <li class="list-group-item bg-transparent">Ao finalizar uma solicitação com produto repetido ou sem estoque, o sistema mostra o motivo</li>
+                                    <li class="list-group-item bg-transparent">Relatórios em PDF podem ser apagados da área de trabalho com o sistema aberto</li>
+                                    <li class="list-group-item bg-transparent">Ao salvar uma viagem, a motivação, os exames e os passageiros ficam sempre na viagem certa, mesmo com vários usuários salvando ao mesmo tempo</li>
+                                    <li class="list-group-item bg-transparent">Administradores voltam a ver as próprias solicitações no almoxarifado</li>
+                                    <li class="list-group-item bg-transparent">Horários exibidos e gravados no fuso de Brasília</li>
+                                    <li class="list-group-item bg-transparent">Trocar o motorista, o veículo ou as cidades de uma viagem atualiza os dados exibidos</li>
+                                    <li class="list-group-item bg-transparent">Clicar em ações de tabela sem selecionar uma linha mostra um aviso em vez de erro</li>
+                                    <li class="list-group-item bg-transparent">Exclusão de clientes, fornecedores e pacientes confirma o resultado e avisa quando o cadastro foi apenas desativado por ter vínculos</li>
+                                </ul>
+                                <h3 class="h5 text-primary mt-3">Novas funcionalidades</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent">Aviso na tela quando a conexão com o servidor cai e quando ela volta</li>
+                                    <li class="list-group-item bg-transparent">Cadastro de funcionário mostra o usuário e a senha inicial, gerada a partir do CPF</li>
+                                </ul>
+                                <h3 class="h5 text-primary mt-3">Interface (UI/UX)</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent">No máximo 5 notificações na tela ao mesmo tempo; as mais antigas fecham primeiro</li>
+                                    <li class="list-group-item bg-transparent">Textos longos nas notificações quebram linha</li>
+                                </ul>
+                                <h3 class="h5 text-primary mt-3">Compatibilidade</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent">Funciona em redes com antivírus ou proxy que inspecionam conexões seguras</li>
+                                    <li class="list-group-item bg-transparent">Arquivos gerados vão para a Área de Trabalho e para Documentos corretos, inclusive com OneDrive ou perfis de domínio</li>
+                                    <li class="list-group-item bg-transparent">Abertura do sistema mais rápida e estável em computadores mais lentos, máquinas sem número de série do disco ou com PowerShell restrito</li>
+                                </ul>
+                                <hr>
+                                <div class="d-flex gap-2">
+                                    <a href="index.html#saudeplus" class="btn btn-outline-warning">
+                                        <i class="fas fa-flask"></i> Baixar beta
+                                    </a>
+                                    <a href="license.html" target="_blank" class="btn btn-outline-dark">
+                                        Termos de uso
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card shadow-sm mb-4">
                             <div class="card-body p-4">
                                 <div class="d-flex justify-content-between align-items-start mb-3 flex-wrap">
                                     <div>
-                                        <h2 class="h4 mb-1" data-release-version>Versão</h2>
-                                        <p class="text-muted mb-0" data-release-date>00/00/0000</p>
+                                        <h2 class="h4 mb-1">Versão 5.0.1 (Beta)</h2>
+                                        <p class="text-muted mb-0">09/10/2026</p>
                                     </div>
-                                    <span class="badge bg-primary">Atual</span>
+                                    <span class="badge bg-secondary">Beta anterior</span>
                                 </div>
                                 <hr>
                                 <h3 class="h5 text-primary">Nova arquitetura e segurança</h3>
@@ -95,8 +146,8 @@
                                 </ul>
                                 <hr>
                                 <div class="d-flex gap-2">
-                                    <a href="index.html#saudeplus" class="btn btn-primary">
-                                        <i class="fas fa-download"></i> Baixar Saúde+
+                                    <a href="index.html#saudeplus" class="btn btn-outline-warning">
+                                        <i class="fas fa-flask"></i> Baixar beta
                                     </a>
                                     <a href="license.html" target="_blank" class="btn btn-outline-dark">
                                         Termos de uso
@@ -112,7 +163,7 @@
                                         <h2 class="h4 mb-1">Versão 4.1.4</h2>
                                         <p class="text-muted mb-0">04/09/2026</p>
                                     </div>
-                                    <span class="badge bg-secondary">Anterior</span>
+                                    <span class="badge bg-primary">Oficial</span>
                                 </div>
                                 <h3 class="h5 text-primary">Correção Urgente</h3>
                                 <ul class="list-group list-group-flush">
@@ -151,6 +202,12 @@
                                     <li class="list-group-item bg-transparent">Melhorias gerais de estabilidade e
                                         segurança na comunicação com o servidor</li>
                                 </ul>
+                                <hr>
+                                <div class="d-flex gap-2">
+                                    <a href="index.html#saudeplus" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> Baixar versão oficial
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
